@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import Construction from '../src/components/UncontrolledLottie'
+
 function App () {
   const logo = 'https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/'
     + 'padrao6-programado/template/pw-images/logo.png'
@@ -48,6 +50,10 @@ function App () {
           <div className='img1' />
           <p>Outro serviço</p>
         </div>
+      </div>
+
+      <div>
+        <Construction />
       </div>
     </div>
   );
