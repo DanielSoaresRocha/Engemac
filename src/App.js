@@ -26,6 +26,29 @@ function App () {
           <h3>Aqui ficará uma breve descrição sobre a empresa </h3>
         </div>
       </section>
+
+      <div className='images'>
+        <div className='img'>
+          <img alt='imagem' />
+          <p>Terraplenagem</p>
+        </div>
+        <div className='img'>
+          <img alt='imagem' />
+          <p>Outro serviço</p>
+        </div>
+        <div className='img'>
+          <img alt='imagem' />
+          <p>Outro serviço</p>
+        </div>
+        <div className='img'>
+          <img alt='imagem' />
+          <p>Outro serviço</p>
+        </div>
+        <div className='img'>
+          <img alt='imagem' />
+          <p>Outro serviço</p>
+        </div>
+      </div>
     </div>
   );
 }
