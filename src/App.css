@@ -91,6 +91,7 @@
 }
 .containerHome .images .img:nth-child(3) .img1{
   height: 100%;
+  width: 350px;
 }
 
 .containerHome .images .img1:hover{
