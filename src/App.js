@@ -29,23 +29,23 @@ function App () {
 
       <div className='images'>
         <div className='img'>
-          <img alt='imagem' />
+          <div className='img1' />
           <p>Terraplenagem</p>
         </div>
         <div className='img'>
-          <img alt='imagem' />
+          <div className='img1' />
           <p>Outro serviço</p>
         </div>
         <div className='img'>
-          <img alt='imagem' />
+          <div className='img1' />
           <p>Outro serviço</p>
         </div>
         <div className='img'>
-          <img alt='imagem' />
+          <div className='img1' />
           <p>Outro serviço</p>
         </div>
         <div className='img'>
-          <img alt='imagem' />
+          <div className='img1' />
           <p>Outro serviço</p>
         </div>
       </div>
