@@ -52,8 +52,19 @@ function App () {
         </div>
       </div>
 
-      <div>
-        <Construction />
+      <div className='contact'>
+        <section>
+          <Construction />
+        </section>
+        <section>
+          <span>SAIBA MAIS SOBRE A</span>
+          <p>Engemac</p>
+          <span>Aqui ficará uma descrição mais detalhada da empresa, e o botão levará para uma tela que será
+          possível descrever-la melhor. Aqui ficará uma descrição mais detalhada da empresa, e o botão levará
+          para uma tela que será possível descrever-la melhor.
+        </span>
+          <button>Saiba mais</button>
+        </section>
       </div>
     </div>
   );

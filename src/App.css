@@ -104,3 +104,39 @@
   align-self: center;
   font-size: 30px;
 }
+
+.containerHome .contact{
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  align-self: center;
+}
+
+.containerHome .contact section:nth-child(2){
+  margin-left: 40px;
+}
+.containerHome .contact section span{
+  font: 22px 'calibri';
+  color: #0A6FA5;
+}
+
+.containerHome .contact section p{
+  font-size: 40px;
+}
+
+.containerHome .contact section span:nth-child(3){
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+}
+
+.containerHome .contact section button{
+  width: 250px;
+  margin-top: 30px;
+  color: white;
+  background-color: #0A6FA5;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+}
