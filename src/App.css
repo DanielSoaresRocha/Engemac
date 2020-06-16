@@ -41,7 +41,7 @@
   height: 350px;
 }
 
-.containerHome section .about{
+.containerHome section .logo{
   position: absolute;
   align-self: center;
   top: 30%;
@@ -50,11 +50,11 @@
   color: white;
 }
 
-.containerHome section .about h1{
+.containerHome section .logo h1{
   font-size: 70px;
 }
 
-.containerHome section .about h3{
+.containerHome section .logo h3{
   font-size: 25px;
 }
 
@@ -105,17 +105,59 @@
   font-size: 30px;
 }
 
-.containerHome .contact{
-  margin: 50px;
+.containerHome .about{
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   max-width: 80%;
   align-self: center;
 }
 
-.containerHome .contact section:nth-child(2){
+.containerHome .about section:nth-child(2){
   margin-left: 40px;
 }
+.containerHome .about section span{
+  font: 22px 'calibri';
+  color: #0A6FA5;
+}
+
+.containerHome .about section p{
+  font-size: 40px;
+}
+
+.containerHome .about section span:nth-child(3){
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+}
+
+.containerHome .about section button{
+  width: 250px;
+  margin-top: 30px;
+  color: white;
+  background-color: #0A6FA5;
+  height: 50px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/*---------- Entrar em contato ------------*/
+.containerHome .contact{
+  margin-top: 50px;
+  align-self: center;
+  width: 80%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.containerHome .contact section{
+  min-width: 400px;
+  padding: 30px;
+}
+
 .containerHome .contact section span{
   font: 22px 'calibri';
   color: #0A6FA5;
@@ -125,18 +167,36 @@
   font-size: 40px;
 }
 
-.containerHome .contact section span:nth-child(3){
-  margin-top: 30px;
-  font-size: 20px;
-  color: black;
+.containerHome .contact section form input{
+  padding: 20px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-size: 15px;
 }
 
-.containerHome .contact section button{
-  width: 250px;
-  margin-top: 30px;
-  color: white;
-  background-color: #0A6FA5;
-  height: 50px;
-  font-size: 22px;
+.containerHome .contact section form textarea{
+  padding: 20px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #eee;
+  font-size: 15px;
+}
+
+.containerHome .contact section form button{
+  padding: 20px;
+  margin-top: 10px;
+  width: 100%;
+  background-color:#0A6FA5;
   cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+.containerHome .contact section:nth-child(2) .leaflet{
+  position: absolute;
+  width: 500px;
+  height: 500px;
 }

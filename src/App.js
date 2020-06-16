@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Map, TileLayer, Marker } from 'react-leaflet'
 
 import Construction from '../src/components/UncontrolledLottie'
 
@@ -23,7 +24,7 @@ function App () {
 
       <section>
         <img alt='Terraplanagem' src='https://www.kannaterraplenagem.com.br/arquivos/31975-d1cef-terraplanagem-canarana-mt.jpg' />
-        <div className='about'>
+        <div className='logo'>
           <h1>Engemac</h1>
           <h3>Aqui ficará uma breve descrição sobre a empresa </h3>
         </div>
@@ -52,7 +53,7 @@ function App () {
         </div>
       </div>
 
-      <div className='contact'>
+      <div className='about'>
         <section>
           <Construction />
         </section>
@@ -64,6 +65,33 @@ function App () {
           para uma tela que será possível descrever-la melhor.
         </span>
           <button>Saiba mais</button>
+        </section>
+      </div>
+
+      <div className='contact'>
+        <section>
+          <span>Entre em</span>
+          <p>Contato</p>
+          <form>
+            <input placeholder='Nome:' /> <br />
+            <input placeholder='Telefone:' /> <br />
+            <input type='email' placeholder='Email:' /> <br />
+            <textarea placeholder='Mensagem:' /> <br />
+
+            <button type='submit'>Enviar</button>
+          </form>
+        </section>
+
+        <section>
+          <span>Nossa</span>
+          <p>Localização</p>
+          <Map center={[-5.9279278, -35.2477546]} zoom={15} style={{ width: '100%', height: '100%' }} >
+            <TileLayer
+              attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[-5.9279278, -35.2477546]}></Marker>
+          </Map>
         </section>
       </div>
     </div>
