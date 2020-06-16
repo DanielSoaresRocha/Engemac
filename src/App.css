@@ -145,16 +145,17 @@
 .containerHome .contact{
   margin-top: 50px;
   align-self: center;
-  width: 80%;
-  max-width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  background-image: url('https://d3q93wnyp4lkf8.cloudfront.net/revista/post_images/7734/0c72ceef562b188aeddd2a6844b84781b0e788da.jpg?1523395334');
+  background-size: cover;
   
 }
 
 .containerHome .contact section{
-  min-width: 400px;
+  min-width: 480px;
   padding: 30px;
 }
 
@@ -193,10 +194,4 @@
   cursor: pointer;
   color: white;
   font-size: 20px;
-}
-
-.containerHome .contact section:nth-child(2) .leaflet{
-  position: absolute;
-  width: 500px;
-  height: 500px;
 }
