@@ -108,14 +108,15 @@ function App () {
         <section>
           <span>Nossa</span>
           <p>Localização</p>
-          <Map center={[-5.9279278, -35.2477546]} zoom={15}
-            style={{ width: '100%', height: '100%', marginTop: '10px' }} >
+
+          <Map center={[-5.9279278, -35.2477546]} zoom={15} className='map'>
             <TileLayer
               attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker position={[-5.9279278, -35.2477546]}></Marker>
           </Map>
+
         </section>
       </div>
     </div>
