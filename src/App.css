@@ -8,9 +8,15 @@
 .containerHome header{
   display: flex;
   flex-direction: row;
-  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   justify-content: center;
   align-items: center;
+}
+
+.containerHome header img{
+  width: 327px;
+  height: 100px;
 }
 
 .containerHome header .space{
@@ -78,10 +84,35 @@
 .containerHome .images .img .img1{
   width: 350px;
   height: 290px;
-  background-image: url('https://www.guiadoconstrutor.com.br/assets/uploads/articles/afinal-o-que-e-terraplanagem-e-para-que-serve.png');
   background-size: cover;
   cursor: pointer;
   transition: all 0.5s;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerHome .images .img .img1 p{
+  visibility: hidden;
+}
+
+/*--------------- IMAGES GRID ------------------*/
+.containerHome .images .img:nth-child(1) .img1{
+  background-image: url('./assets/img1.jpg');
+}
+.containerHome .images .img:nth-child(2) .img1{
+  background-image: url('./assets/img2.jpg');
+}
+.containerHome .images .img:nth-child(3) .img1{
+  background-image: url('./assets/img3.jpg'); 
+}
+.containerHome .images .img:nth-child(4) .img1{
+  background-image: url('./assets/img4.jpg');
+}
+.containerHome .images .img:nth-child(5) .img1{
+  background-image: url('./assets/img5.jpg');
 }
 
 .containerHome .images .img:nth-child(3){ /*imagem lateral */
@@ -94,13 +125,20 @@
   width: 350px;
 }
 
-.containerHome .images .img1:hover{
+.containerHome .images .img .img1:hover{
   background-image: url('https://areafly.com.br/wp-content/uploads/2019/05/background-azul1-584x407.gif');
   background-size: cover;
 }
 
-.containerHome .images .img p{
+.containerHome .images .img .img1:hover p{
+  visibility: visible;
+}
+
+
+
+.containerHome .images .img .img1 p{
   position: absolute;
+  justify-self: center;
   align-self: center;
   font-size: 30px;
 }
@@ -194,4 +232,41 @@
   cursor: pointer;
   color: white;
   font-size: 20px;
+}
+
+
+/* ------------------------- Responsividade ------------------------ */
+
+@media(max-width: 1125px){
+  .containerHome .images{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .containerHome .images .img:nth-child(3){ /*imagem lateral */
+    grid-row: 3;
+    grid-column: 1/2;
+  }
+    .containerHome header .space{
+    width: 10%;
+  }
+}
+
+@media(max-width: 1030px){
+  .containerHome .contact{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .containerHome .contact section{
+    max-width: 480px;
+    padding: 30px;
+    align-self: center;
+  }
+  .containerHome .contact section:nth-child(2){
+    max-width: 480px;
+    padding: 30px;
+    align-self: center;
+    background-color: black;
+  }
 }

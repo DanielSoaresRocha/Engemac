@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Map, TileLayer, Marker } from 'react-leaflet'
 
+import logo from './assets/logo2.png'
+import img6 from './assets/img6.jpg'
+
 import Construction from '../src/components/UncontrolledLottie'
 
 function App () {
   const [autdoor, setAutdoor] = useState('')
-  const logo = 'https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/'
-    + 'padrao6-programado/template/pw-images/logo.png'
+
   const img1 = 'https://www.kannaterraplenagem.com.br/arquivos/31975-d1cef-terraplanagem-canarana-mt.jpg'
   const img2 = 'https://imagens-voitto.s3.amazonaws.com/imagens-blog/meta/c0752edfe1641aafffb53a6fcb476885.jpg'
   const img3 = 'https://lh3.googleusercontent.com/proxy/xwP0i9Eqvg1pLBaRr-a1B7QkfqGptHwL7q5DkravaZ6p1ofoySewilBLVnW-BtU9xm9QpZM1O-5gX2XmWX7p5vr4qUI6IYXI2nhrF5wKFL7lSjkmdykGNrYmQDUvRsW2xtS5bfQpNvhDTb4HNc4'
-  const imgs = [img1, img2, img3]
+  const imgs = [img1, img6, img3, img2]
   let position = 0
   useEffect(() => {
     setAutdoor(img1)
@@ -49,24 +51,29 @@ function App () {
 
       <div className='images'>
         <div className='img'>
-          <div className='img1' />
-          <p>Terraplenagem</p>
+          <div className='img1'>
+            <p>Terraplenagem</p>
+          </div>
         </div>
         <div className='img'>
-          <div className='img1' />
-          <p>Outro serviço</p>
+          <div className='img1'>
+            <p>Terraplenagem</p>
+          </div>
         </div>
         <div className='img'>
-          <div className='img1' />
-          <p>Outro serviço</p>
+          <div className='img1'>
+            <p>Terraplenagem</p>
+          </div>
         </div>
         <div className='img'>
-          <div className='img1' />
-          <p>Outro serviço</p>
+          <div className='img1'>
+            <p>Terraplenagem</p>
+          </div>
         </div>
         <div className='img'>
-          <div className='img1' />
-          <p>Outro serviço</p>
+          <div className='img1'>
+            <p>Terraplenagem</p>
+          </div>
         </div>
       </div>
 
