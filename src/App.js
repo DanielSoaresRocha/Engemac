@@ -19,7 +19,6 @@ function App () {
     const interval = setInterval(() => {
       setAutdoor(imgs[position])
       // eslint-disable-next-line
-      console.log(position)
       position === imgs.length - 1 ? position = 0 : position++
     }, 5000);
     return () => clearInterval(interval);
@@ -97,10 +96,10 @@ function App () {
           <span>Entre em</span>
           <p>Contato</p>
           <form>
-            <input required='true' placeholder='Nome:' /> <br />
-            <input type='number' required='true' placeholder='Telefone:' /> <br />
-            <input required='true' type='email' placeholder='Email:' /> <br />
-            <textarea required='true' placeholder='Mensagem:' /> <br />
+            <input required={true} placeholder='Nome:' /> <br />
+            <input type='number' required={true} placeholder='Telefone:' /> <br />
+            <input required={true} type='email' placeholder='Email:' /> <br />
+            <textarea required={true} placeholder='Mensagem:' /> <br />
 
             <button type='submit'>Enviar</button>
           </form>
