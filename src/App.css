@@ -189,7 +189,6 @@
   justify-content: center;
   background-image: url('https://d3q93wnyp4lkf8.cloudfront.net/revista/post_images/7734/0c72ceef562b188aeddd2a6844b84781b0e788da.jpg?1523395334');
   background-size: cover;
-  
 }
 
 .containerHome .contact section{
@@ -281,3 +280,113 @@
     margin: 10px;
   }
 }
+
+@media(max-width: 1030px){
+  .containerHome header .space{
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 870px){
+  .containerHome .about{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerHome .about section:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+@media(max-width: 780px){
+  .containerHome header{
+    flex-direction: column;
+  }
+
+  .containerHome header .menu{
+    margin-top: 20px;
+  }
+
+  .containerHome .images{
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 730px){
+  .containerHome .images{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 600px){
+  .containerHome header .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .containerHome header .menu p:nth-child(4),  .containerHome header .menu p:nth-child(5){
+    margin-top: 20px;
+  }
+/*------------------------*/
+  .containerHome section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .containerHome section img{
+    height: 90px;
+  }
+
+  .containerHome section .logo{
+    position: relative;
+    padding: 0px;
+    background-color: #053957;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .containerHome section .logo h1{
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  .containerHome section .logo h3{
+    font-size: 18px;
+    font: 18px calibri;
+    max-width: 80%;
+    align-self: center;
+}
+/*------------------------*/
+  .containerHome .images{
+    min-width: 100%;
+  }
+
+  .containerHome .images .img .img1, .containerHome .images .img:nth-child(3) .img1{
+    width: 100%;
+  }
+
+ .containerHome .contact section{
+    min-width: 280px;
+    width: 300px;
+  }
+  .containerHome .about{
+    min-width: 100%;
+  }
+
+  .containerHome .about section:nth-child(2){
+    margin-left: 10px;
+  }
+
+  .containerHome .contact section:nth-child(2){
+    margin-bottom: 60px;
+  }
+
+  .containerHome .contact section:nth-child(2) .map{
+    height: 300px;
+  }
+
+}
+
