@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Map, TileLayer, Marker } from 'react-leaflet'
+import Favicon from 'react-favicon';
 
 import logo from './assets/logo2.png'
 import img6 from './assets/img6.jpg'
+import favicon from './assets/favicon.ico'
 
 import Construction from '../src/components/UncontrolledLottie'
 
@@ -27,6 +29,7 @@ function App () {
 
   return (
     <div className="containerHome">
+      <Favicon url={favicon} />
       <header>
         <img src={logo} alt='Logo Engemac' />
         <div className='space'>
