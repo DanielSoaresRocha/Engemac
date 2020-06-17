@@ -12,14 +12,14 @@ function App () {
 
   const img1 = 'https://www.kannaterraplenagem.com.br/arquivos/31975-d1cef-terraplanagem-canarana-mt.jpg'
   const img2 = 'https://imagens-voitto.s3.amazonaws.com/imagens-blog/meta/c0752edfe1641aafffb53a6fcb476885.jpg'
-  const img3 = 'https://lh3.googleusercontent.com/proxy/xwP0i9Eqvg1pLBaRr-a1B7QkfqGptHwL7q5DkravaZ6p1ofoySewilBLVnW-BtU9xm9QpZM1O-5gX2XmWX7p5vr4qUI6IYXI2nhrF5wKFL7lSjkmdykGNrYmQDUvRsW2xtS5bfQpNvhDTb4HNc4'
-  const imgs = [img1, img6, img3, img2]
+  const imgs = [img1, img6, img2]
   let position = 0
   useEffect(() => {
     setAutdoor(img1)
     const interval = setInterval(() => {
       setAutdoor(imgs[position])
       // eslint-disable-next-line
+      console.log(position)
       position === imgs.length - 1 ? position = 0 : position++
     }, 5000);
     return () => clearInterval(interval);
@@ -52,27 +52,27 @@ function App () {
       <div className='images'>
         <div className='img'>
           <div className='img1'>
-            <p>Terraplenagem</p>
+            <p>EQUIPAMENTOS</p>
           </div>
         </div>
         <div className='img'>
           <div className='img1'>
-            <p>Terraplenagem</p>
+            <p>CONSTRUÇÃO CÍVIL</p>
           </div>
         </div>
         <div className='img'>
           <div className='img1'>
-            <p>Terraplenagem</p>
+            <p>TECNOLOGIA CONSTRUTIVA</p>
           </div>
         </div>
         <div className='img'>
           <div className='img1'>
-            <p>Terraplenagem</p>
+            <p>CONTRATAÇÃO DE MÃO DE OBRA</p>
           </div>
         </div>
         <div className='img'>
           <div className='img1'>
-            <p>Terraplenagem</p>
+            <p>TERRAPLENAGEM</p>
           </div>
         </div>
       </div>

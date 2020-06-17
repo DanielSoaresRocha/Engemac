@@ -96,6 +96,8 @@
 
 .containerHome .images .img .img1 p{
   visibility: hidden;
+  text-align: center;
+  color: white;
 }
 
 /*--------------- IMAGES GRID ------------------*/
@@ -134,13 +136,11 @@
   visibility: visible;
 }
 
-
-
 .containerHome .images .img .img1 p{
   position: absolute;
   justify-self: center;
   align-self: center;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .containerHome .about{
@@ -379,6 +379,7 @@
 
   .containerHome .about section:nth-child(2){
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .containerHome .contact section:nth-child(2){
@@ -387,6 +388,25 @@
 
   .containerHome .contact section:nth-child(2) .map{
     height: 300px;
+  }
+
+  /* animação */
+  .containerHome .images .img .img1 p{
+    visibility: visible;
+  }
+  .containerHome .images .img .img1{
+    animation-name: change-image;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes change-image {
+    to{
+      
+    }from{
+      background-image: url('https://areafly.com.br/wp-content/uploads/2019/05/background-azul1-584x407.gif');
+    }
   }
 
 }
