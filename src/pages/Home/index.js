@@ -11,6 +11,8 @@ import favicon from '../../assets/favicon.ico'
 
 import Construction from '../../components/UncontrolledLottie'
 
+import Menu from '../../components/Menu'
+
 function Home () {
     const [autdoor, setAutdoor] = useState('')
 
@@ -31,6 +33,7 @@ function Home () {
 
     return (
         <div className="containerHome">
+            <Menu />
             <Favicon url={favicon} />
             <header>
                 <img src={logo} alt='Logo Engemac' />
