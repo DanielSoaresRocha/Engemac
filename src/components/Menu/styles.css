@@ -1,5 +1,4 @@
 .container-menu {
-    background-color: red;
     position: absolute;
     visibility: hidden;
 }
@@ -8,22 +7,18 @@
         visibility: visible;
     }
 .menu-burguer{
-    background-color: black;
+    background-color: #053957;
     color: aqua;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     position: fixed;
-    right: 20px;
+    left: 20px;
     top: 20px;
     cursor: pointer;
-    box-shadow: 0 0 0 0px black, 0 0 0 0px black;
+    box-shadow: 0 0 0 0px #053957, 0 0 0 0px #053957;
     transition: 1s;
     z-index: 100;
-}
-
-.menu-burguer:hover{
-    box-shadow: 0 0 0 8px black, 0 0 0 8px black;
 }
 
 .menu-burguer .burguer{
@@ -55,7 +50,7 @@
     bottom: -10px;
 }
 
-input{
+.container-menu input{
     display: none;
 }
 
@@ -75,7 +70,7 @@ input:checked ~ label .burguer:before{
 
 input:checked ~ label .menu-burguer{
     background-color: red;
-    box-shadow: 0 0 0 170vw black,0 0 0 170vw black;
+    box-shadow: 0 0 0 170vw #053957,0 0 0 170vw #053957;
 }
 
 ul{

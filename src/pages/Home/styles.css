@@ -325,6 +325,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .containerHome header .menu p{
+    display: none;/*Retira o menu*/
+  }
+
   .containerHome header .menu p:nth-child(4),  .containerHome header .menu p:nth-child(5){
     margin-top: 20px;
   }
