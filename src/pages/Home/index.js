@@ -31,9 +31,29 @@ function Home () {
         // eslint-disable-next-line
     }, [])
 
+    useEffect(() => {
+        const target = document.querySelectorAll('[data-anime]')
+
+        function animeScroll () {
+            const windowTop = window.pageYOffset + (window.innerHeight * 3 / 4)
+
+            target.forEach((element) => {
+                if (windowTop > element.offsetTop) {
+                    element.classList.add('animate')
+                } else {
+                    element.classList.remove('animate')
+                }
+            })
+        }
+
+        window.addEventListener('scroll', () => {
+            animeScroll();
+        })
+
+    }, [])
+
     return (
         <div className="containerHome">
-            <Menu />
             <Favicon url={favicon} />
             <header>
                 <img src={logo} alt='Logo Engemac' />
@@ -85,10 +105,10 @@ function Home () {
             </div>
 
             <div className='about'>
-                <section>
+                <section data-anime='left'>
                     <Construction />
                 </section>
-                <section>
+                <section data-anime='right'>
                     <span>SAIBA MAIS SOBRE A</span>
                     <p>Engemac</p>
                     <span>Aqui ficará uma descrição mais detalhada da empresa, e o botão levará para uma tela que será
@@ -126,6 +146,7 @@ function Home () {
 
                 </section>
             </div>
+            <Menu />
         </div>
     );
 }

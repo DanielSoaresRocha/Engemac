@@ -41,6 +41,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  
 }
 .containerHome section img{
   width: 100%;
@@ -241,6 +242,25 @@
 }
 
 
+[data-anime]{
+  opacity: 0;
+  transition: 1.5s;
+  position: fixed;
+}
+[data-anime='left']{
+  transform: translate3d(-300px, 0, 0);
+}
+[data-anime='right']{
+  transform: translate3d(300px, 0, 0);
+  
+}
+
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
 /* ------------------------- Responsividade ------------------------ */
 
 @media(max-width: 1125px){
@@ -280,6 +300,7 @@
     height: 400px;
     margin: 10px;
   }
+
 }
 
 @media(max-width: 1030px){
