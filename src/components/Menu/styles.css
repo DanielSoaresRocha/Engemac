@@ -1,6 +1,7 @@
 .container-menu {
     position: absolute;
     visibility: hidden;
+    overflow: hidden;
 }
 @media(max-width:600px){
 .container-menu{

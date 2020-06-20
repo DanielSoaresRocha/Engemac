@@ -1,6 +1,7 @@
 *{
   margin: 0px;
 }
+
 .containerHome{
   display: flex;
   flex-direction: column;
@@ -150,6 +151,7 @@
   flex-direction: row;
   max-width: 80%;
   align-self: center;
+
 }
 
 .containerHome .about section:nth-child(2){
@@ -244,15 +246,13 @@
 
 [data-anime]{
   opacity: 0;
-  transition: 1.5s;
-  position: fixed;
+  transition: 1s;
 }
 [data-anime='left']{
-  transform: translate3d(-300px, 0, 0);
+  transform: translate3d(0, -100px, 0);
 }
 [data-anime='right']{
-  transform: translate3d(300px, 0, 0);
-  
+  transform: translate3d(0, 100px, 0);
 }
 
 [data-anime].animate{

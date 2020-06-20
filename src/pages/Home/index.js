@@ -31,6 +31,21 @@ function Home () {
         // eslint-disable-next-line
     }, [])
 
+    function debounce (func, wait, immediate) {
+        var timeout;
+        return function () {
+            var context = this, args = arguments;
+            var later = function () {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
     useEffect(() => {
         const target = document.querySelectorAll('[data-anime]')
 
@@ -46,9 +61,9 @@ function Home () {
             })
         }
 
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', debounce(() => {
             animeScroll();
-        })
+        }, 200))
 
     }, [])
 
@@ -114,7 +129,7 @@ function Home () {
                     <span>Aqui ficará uma descrição mais detalhada da empresa, e o botão levará para uma tela que será
                     possível descrever-la melhor. Aqui ficará uma descrição mais detalhada da empresa, e o botão levará
                     para uma tela que será possível descrever-la melhor.
-        </span>
+                    </span>
                     <button>Saiba mais</button>
                 </section>
             </div>
